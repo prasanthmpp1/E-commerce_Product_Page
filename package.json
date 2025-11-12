@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-product-page",
+  "version": "1.0.0",
+  "description": "Production-grade MERN eCommerce Platform with TypeScript, MVC Architecture",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "pnpm -r format",
+    "type-check": "pnpm -r type-check"
+  },
+  "devDependencies": {
+    "pnpm": "^8.0.0",
+    "typescript": "^5.3.0",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
